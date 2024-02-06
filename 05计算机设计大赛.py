@@ -8,12 +8,10 @@ def home():
     return render_template('home.html')
 @app.route('/china')
 def china():
-
     return render_template('China_Web.html')
 @app.route('/province')
 def province():
     data = request.values.get('data')
-
     return render_template('Province_Web.html',data=data)
 @app.route('/world')
 def world():
